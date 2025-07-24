@@ -1,12 +1,13 @@
-from flask import flask
-app = flask(__name__)
+from flask import Flask
 
-@app.route("/info")
-def lwinfo():
-        return "i m LW from India"
+app = Flask(__name__)
 
-@app.route("/phone")
+@app.route('/')
+def home():
+    return "Hello, Flask!"
+
 def lwphone():
-         return"93516666689"
+    return "LW Phone Function"
+
 
 app.run(host="0.0.0.0")
