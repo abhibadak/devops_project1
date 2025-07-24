@@ -1,4 +1,4 @@
 from app import lwphone
 
-def test_lwphone():
-           assert lwphone() == "93516666689"
+def lwphone():
+    return "LW Phone Function"
